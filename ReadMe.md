@@ -49,7 +49,7 @@ NotificationService/
    ```
 2. Configuration:
 	
-	```json
+```json
 {
   "AllowedHosts": "*",
   "Serilog": {
@@ -80,7 +80,9 @@ NotificationService/
     "Password": "guest"
   }
 }
-```
+
+``` 
+
 
 3. Build and run the application:
 
@@ -88,13 +90,13 @@ NotificationService/
     dotnet build
     dotnet run
 
-    ```
+ ```
 4. Access the API documentation at:
 
  ```
     https://localhost:{PORT}/scalar-api-reference
 
-   ```
+ ```
 Note: This project uses Scalar API Reference instead of Swagger for API documentation and testing.
 
 
