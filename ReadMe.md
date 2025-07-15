@@ -15,7 +15,8 @@ A lightweight ASP.NET Core microservice for sending email notifications via Rabb
 
 ##  Project Layout
 
-```plaintext
+```
+plaintext
 NotificationService/
 ├── Consumers/               # MassTransit consumers
 ├── Controllers/             # API controllers
@@ -28,7 +29,7 @@ NotificationService/
 ├── Program.cs               # Entry point
 ├── Dockerfile               # Docker build file
 └── docker-compose.yml       # Compose for RabbitMQ + service
-
+```
 
 
 
@@ -42,10 +43,10 @@ NotificationService/
 
 1. Clone the repository:
 
-   ```bash
+   ```
    git clone https://github.com/YourUsername/NotificationService.git
    cd NotificationService
-
+   ```
 2. Configuration:
 	
 	```json
@@ -79,19 +80,21 @@ NotificationService/
     "Password": "guest"
   }
 }
-
+```
 
 3. Build and run the application:
 
- ```bash
+ ```
     dotnet build
     dotnet run
 
+    ```
 4. Access the API documentation at:
 
- ```bash
+ ```
     https://localhost:{PORT}/scalar-api-reference
 
+   ```
 Note: This project uses Scalar API Reference instead of Swagger for API documentation and testing.
 
 
@@ -99,8 +102,10 @@ Note: This project uses Scalar API Reference instead of Swagger for API document
 5. Run with Docker Compose
 Build and start containers:
 
-```bash
+```
     docker-compose up --build
+
+```
 
 The NotificationService will be accessible on http://localhost:5000.
 
@@ -112,10 +117,10 @@ RabbitMQ management UI available at http://localhost:15672 (default guest/guest 
 
 Send Custom Email:
 
-```bash
+```
     POST /api/content/custom
     Content-Type: application/json
-
+```
 Body:
 
 ```json
@@ -125,3 +130,5 @@ Body:
       "body": "Email body content",
       "emailType": "Message"
     }
+
+  ```
