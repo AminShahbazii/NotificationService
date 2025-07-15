@@ -1,0 +1,43 @@
+﻿# Visual Studio
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Build results
+bin/
+obj/
+
+
+# User-specific files
+*.rsuser
+*.resharper
+*.DotSettings.user
+
+
+# NuGet
+*.nupkg
+packages/
+
+# Publish output
+publish/
+
+# Docker files 
+Dockerfile
+docker-compose.yml
+
+
+# Resharper
+_ReSharper*/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# dotenv environment files
+.env
+
+
+# Test results
+TestResults/
